@@ -7,7 +7,6 @@
 3.Contributing
 4.License
 5.Installation
-
 ##To install and run this project, follow the steps below:
 
 Clone the repository to your local machine using git clone https://github.com/your-username/decentralised-voting-system.git.
@@ -18,7 +17,6 @@ Compile the smart contracts using npm run compile.
 Deploy the smart contracts to the Ganache network using npm run migrate.
 Start the frontend using npm start.
 Usage
-
 ##To use the decentralised voting system, follow the steps below:
 
 Open your Metamask wallet and connect it to the Ganache network.
