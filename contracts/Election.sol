@@ -24,4 +24,10 @@ contract Election {
         candidatesCount ++;
         candidates[candidatesCount] = Candidate(candidatesCount, _name, 0);
     }
+
+    function addVote (uint uid) private{
+        Candidate storage candidateInfo = candidates[uid];
+        candidateInfo.voteCount++;
+
+    }
 }
