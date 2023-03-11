@@ -19,6 +19,8 @@
             <form>
                 <label class="form-input-proof" for="idproof">ID Proof:</label><br/>
                 <input type="file" id="idproof" name="idproof"><br/>
+                <div id="camera-place">
+                </div>
                 <button class="camera-btn" onclick="take_snapshot()" >Take Snapshot</button>
                 <div id="results"></div>
                 <button class="submit-btn" type="submit" onclick="login()">Submit</button>
@@ -28,12 +30,12 @@
     </div>
     
 </body>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
 
 <script>
     function login() {
+var name = document.getElementById("name").value;
 var proof = document.getElementById("idproof").value;
-var picture=document.getElementById("results").value;
 }
   </script>
   <script>
