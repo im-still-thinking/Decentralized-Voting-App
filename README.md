@@ -38,6 +38,6 @@
 5.Push your changes to your fork using git push origin descriptive-branch-name.
 6.Create a pull request.
 
-##License
-###This project is licensed under the MIT License.
+## License
+### This project is licensed under the MIT License.
 
