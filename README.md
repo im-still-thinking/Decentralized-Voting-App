@@ -6,9 +6,9 @@
 2.Usage
 3.Contributing
 4.License
-5.Installation
 
-## To install and run this project, follow the steps below:
+## Installation
+### To install and run this project, follow the steps below:
 
 1. Clone the repository to your local machine using git clone https://github.com/your-username/decentralised-voting-system.git.
 2.Navigate to the project directory using cd decentralised-voting-system.
