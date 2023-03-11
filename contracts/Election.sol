@@ -21,11 +21,14 @@ contract Election {
     constructor () public{
         addCandidate("Candidate 1");
         addCandidate("Candidate 2");
+        addCandidate("Candidate 3");
+        addCandidate("Candidate 4");
+        addCandidate("Candidate 5");
     }
 
     function addCandidate (string memory _name) private {
         candidatesCount ++;
-        candidates[candidatesCount] = Candidate(candidatesCount, _name, 0);
+        candidates[candidatesCount] = Candidate(candidatesCount, _name, 1);
     }
 
    function vote (uint _candidateId) public {
