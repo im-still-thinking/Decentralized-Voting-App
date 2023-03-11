@@ -28,6 +28,5 @@ contract Election {
     function addVote (uint uid) private{
         Candidate storage candidateInfo = candidates[uid];
         candidateInfo.voteCount++;
-
     }
 }
