@@ -1,5 +1,5 @@
 # Decentralised Voting System
-## This project is a decentralised voting system that uses Ganache and Metamask to enable anyone to vote by verifying their biometric data from their Aadhar card.
+This project is a decentralised voting system that uses Ganache and Metamask to enable anyone to vote by verifying their biometric data from their Aadhar card.
 
 ## Table of Contents:
 1.Installation
