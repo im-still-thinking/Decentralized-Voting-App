@@ -15,20 +15,21 @@ contract Election {
     // Store accounts that have voted
     mapping(address => bool) public voters;
 
+    event votedEvent (
+        uint indexed _candidateId
+    );
+
     // Store Candidates Count
     uint public candidatesCount;
 
     constructor () public{
         addCandidate("Candidate 1");
         addCandidate("Candidate 2");
-        addCandidate("Candidate 3");
-        addCandidate("Candidate 4");
-        addCandidate("Candidate 5");
     }
 
     function addCandidate (string memory _name) private {
         candidatesCount ++;
-        candidates[candidatesCount] = Candidate(candidatesCount, _name, 1);
+        candidates[candidatesCount] = Candidate(candidatesCount, _name, 0);
     }
 
    function vote (uint _candidateId) public {
@@ -43,5 +44,7 @@ contract Election {
 
         // update candidate vote Count
         candidates[_candidateId].voteCount ++;
+
+        emit votedEvent(_candidateId);
     }
 }
